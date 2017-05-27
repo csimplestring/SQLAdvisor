@@ -24,7 +24,8 @@ WORKDIR /code/sqladvisor/
 RUN cmake -DCMAKE_BUILD_TYPE=debug ./ 
 RUN	make
 RUN mv sqladvisor /usr/local/bin
-RUN cd / \
-	rm -rf /code
+
+WORKDIR /
+RUN rm -rf /code
 
 CMD ['sqladvisor']

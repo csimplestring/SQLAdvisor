@@ -1,3 +1,3 @@
 
 docker-build: 
-	docker build . -t csimplestring/sqladviser
+	docker build . -t csimplestring/sqladvisor
